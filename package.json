@@ -4,7 +4,8 @@
   "description": "trying to use what I want from every framework is there",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build":"webpack"
   },
   "repository": {
     "type": "git",
@@ -29,7 +30,9 @@
     "url": "https://github.com/usefss/django-webpack/issues"
   },
   "homepage": "https://github.com/usefss/django-webpack#readme",
-  "dependencies": {
-    "lodash": "^4.17.19"
+  "dependencies": {},
+  "devDependencies": {
+    "webpack": "^4.44.0",
+    "webpack-cli": "^3.3.12"
   }
 }
