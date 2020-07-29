@@ -1,0 +1,35 @@
+{
+  "name": "what-is-js",
+  "version": "0.0.1",
+  "description": "trying to use what I want from every framework is there",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/usefss/django-webpack.git"
+  },
+  "keywords": [
+    "webpack",
+    "sass",
+    "scss",
+    "node",
+    "js",
+    "django",
+    "python",
+    "orm",
+    "browser",
+    "vue",
+    "react"
+  ],
+  "author": "Yosef Salmalian",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/usefss/django-webpack/issues"
+  },
+  "homepage": "https://github.com/usefss/django-webpack#readme",
+  "dependencies": {
+    "lodash": "^4.17.19"
+  }
+}
