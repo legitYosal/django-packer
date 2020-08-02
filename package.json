@@ -1,11 +1,12 @@
 {
   "name": "what-is-js",
   "version": "0.0.1",
-  "description": "trying to use what I want from every framework is there",
+  "description": "trying to use what I want from every framework there is",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build":"webpack"
+    "build":"webpack --config webpack.config.js",
+    "watch":"webpack --config webpack.config.js --watch"
   },
   "repository": {
     "type": "git",
