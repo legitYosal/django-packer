@@ -9,18 +9,42 @@ module.exports = {
         // print: './src/print.js',
     },
     output: {
-        filename: '[name].[contenthash].js',
-        chunkFilename: '[name].[contenthash].js',
+        // filename: '[name].[contenthash].js',
+        // chunkFilename: '[name].[contenthash].js',
+        filename: '[name].bundle.js',
+        chunkFilename: '[name].bundle.js',
         path: path.resolve(__dirname, 'dist', 'build'),
     },
     module: {
         rules: [
+            // {
+            //     test: /\.js$/,
+            //     loader: 'eslint-loader',
+            //     exclude: /node_modules/,
+            //     options:{},
+            // },
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                use: [
+                    'babel-loader',
+                    'eslint-loader',
+                ],
+            },
             {
                 test: /\.css$/,
                 use: [
                     'style-loader',
                     'css-loader',
                 ],
+            },
+            {
+                test: /\.s[ca]ss$/i,
+                use: [
+                    'style-loader',
+                    'css-loader',
+                    'sass-loader',
+                ]
             },
             {
                 test: /\.(png|svg|jpg|gif)$/,
@@ -30,6 +54,9 @@ module.exports = {
             },
             
         ],
+    },
+    resolve: {
+        extensions: ['*', '.js', ],
     },
     plugins: [
         new CleanWebpackPlugin(),

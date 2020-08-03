@@ -1,7 +1,8 @@
 
 import _ from 'lodash'
 
-import './css/style.css'
+// import './css/style.css'
+import './scss/style.scss'
 // import MyImage from './pictures/test.png'
 import print_me from './print'
 
