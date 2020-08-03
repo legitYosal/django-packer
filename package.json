@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build":"webpack --config webpack.config.js",
-    "watch":"webpack --config webpack.config.js --watch"
+    "build": "webpack --config webpack.config.js",
+    "start": "webpack --config webpack.config.js --watch"
   },
   "repository": {
     "type": "git",
@@ -31,8 +31,14 @@
     "url": "https://github.com/usefss/django-webpack/issues"
   },
   "homepage": "https://github.com/usefss/django-webpack#readme",
-  "dependencies": {},
+  "dependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "lodash": "^4.17.19"
+  },
   "devDependencies": {
+    "css-loader": "^4.2.0",
+    "file-loader": "^6.0.0",
+    "style-loader": "^1.2.1",
     "webpack": "^4.44.0",
     "webpack-cli": "^3.3.12"
   }
