@@ -1,26 +1,11 @@
-
-import _ from 'lodash'
-
-// import './css/style.css'
+import Vue from 'vue'
+import App from './App.vue'
 import './scss/style.scss'
-// import MyImage from './pictures/test.png'
-import print_me from './print'
 
-
-function component() {
-    const element = document.createElement('div')
-    element.innerHTML = 'hamed is cool'
-    return element
-}
-document.body.appendChild(component())
-
-var x = 323
-
-
-console.log('hello-world')
-console.log(_.join(['what', 'does', 'lodash', 'do?', ], ' '))
-
-console.log(print_me())
-
-
-console.log('wefwef')
+console.log('hello ')
+window.addEventListener('load', function () {
+    const VueApp = new Vue({
+      el: '#app',
+      render: h => h(App),
+    })
+})

@@ -1,4 +1,5 @@
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+const VueLoaderPlugin = require('vue-loader/lib/plugin')
 const path = require('path')
 
 module.exports = {
@@ -17,12 +18,6 @@ module.exports = {
     },
     module: {
         rules: [
-            // {
-            //     test: /\.js$/,
-            //     loader: 'eslint-loader',
-            //     exclude: /node_modules/,
-            //     options:{},
-            // },
             {
                 test: /\.js$/,
                 exclude: /node_modules/,
@@ -30,6 +25,10 @@ module.exports = {
                     'babel-loader',
                     'eslint-loader',
                 ],
+            },
+            { 
+                test: /\.vue$/, 
+                use: 'vue-loader' 
             },
             {
                 test: /\.css$/,
@@ -60,6 +59,7 @@ module.exports = {
     },
     plugins: [
         new CleanWebpackPlugin(),
+        new VueLoaderPlugin(),
     ],
     optimization: {
         // runtimeChunk: 'single',

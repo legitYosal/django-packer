@@ -1,4 +1,4 @@
-# django-webpack-vue
+# django webpack.js vue.js whatever...
 future django-webpack template 
 ## Usefull links 
 [django webpack loader package](https://github.com/owais/django-webpack-loader) for django it is very large for my purpose and has problems with webpack>=4.  
@@ -7,13 +7,13 @@ future django-webpack template
 [working example repo](https://github.com/pascalw/django-webpack-boilerplate), showing the last working state, why I am doing this? :/  
 
 # Getting started
-first:
+clone project:
 ```
-    git clone https://github.com/usefss/django-vue.git
-    cd django-vue
+git clone https://github.com/usefss/django-vue.git
+cd django-vue
 ```
 startup webpack:
 ```
-    npm install
-    npm start
+npm install
+npm start
 ```
