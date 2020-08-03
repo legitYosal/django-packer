@@ -6,12 +6,14 @@
 
 <script>
 export default {
-  data() {
-    return {
-      message: 'Hello World',
-    };
-  },
-};
+    delimiters: ['[[', ']]'],
+    awefawf: 'afewaf',
+    data() {
+        return {
+            message: 'Hello World',
+        }
+    },
+}
 </script>
 
 <style>
@@ -19,5 +21,6 @@ export default {
   font-size: 18px;
   font-family: 'Roboto', sans-serif;
   color: blue;
+  background: white;
 }
 </style>

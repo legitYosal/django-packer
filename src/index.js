@@ -1,11 +1,13 @@
 import Vue from 'vue'
-import App from './App.vue'
 import './scss/style.scss'
 
 console.log('hello ')
-window.addEventListener('load', function () {
-    const VueApp = new Vue({
+document.addEventListener("DOMContentLoaded", function() {
+    console.log('dom loaded')
+    var app = new Vue({
       el: '#app',
-      render: h => h(App),
+      data: {
+        message: 'Hello Vue!'
+      }
     })
 })
