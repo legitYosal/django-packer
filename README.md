@@ -29,6 +29,7 @@ Go to [127.0.0.1:8000](http://127.0.0.1:8000), and you can see a dynamic rendere
 Any change that makes this better is welcomed.
 
 ## What will happen?
+How to use webpack caching and hash file names with django seperated templates?
 Changing webpack to compile all files in src folder to seperate .js for sake of code spliting optimization.  
 Add something to django watcher to auto load compiled .js files to template base and reload browser.  
 Structure project in a charming shape.  
