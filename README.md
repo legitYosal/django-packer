@@ -25,4 +25,4 @@ pip install -r requirements.txt
 ./manage migrate
 ./manage runserver 0.0.0.0:8000
 ```
-go to 127.0.0.1:8000, and you can see a dynamic rendered vue component starting on page.
+go to [127.0.0.1:8000](http://127.0.0.1:8000), and you can see a dynamic rendered vue component starting on page.
