@@ -1,13 +1,18 @@
-import Vue from 'vue'
-import './scss/style.scss'
+import Vue from 'vue/dist/vue.js'
+
+import HelloWorld from './components/HelloWorld.vue'
 
 console.log('hello ')
 document.addEventListener("DOMContentLoaded", function() {
     console.log('dom loaded')
     var app = new Vue({
-      el: '#app',
-      data: {
-        message: 'Hello Vue!'
-      }
+        el: '#app',
+        components: {
+            'just-a-test': HelloWorld,
+        },
+        delimiters: ['[[', ']]'],
+        data: {
+            message: 'Hello Vue!'
+        },
     })
 })
