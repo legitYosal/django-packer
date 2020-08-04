@@ -1,7 +1,41 @@
+
+### js
 node_modules
 
 **lock**
 
 ./dist/build
 dist/build
+dist
 build
+
+### editor
+
+.idea/
+.vscode/
+venv/
+.DS_Store
+
+
+
+### Django ###
+./env
+env
+db.sqlite3
+*.db
+db.*
+*.log
+*.pot
+*.pyc
+local_settings.py
+
+### Python ###
+pycache/
+*.py[cod]
+__pycache__
+**__pycache__
+./*/__pycache__
+
+
+### sh
+resolve.sh
