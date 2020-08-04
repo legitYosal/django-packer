@@ -19,6 +19,7 @@ npm start
 ```
 startup django:
 ```
+python3 -m venv env
 source env/bin/activate
 pip install -r requirements.txt
 ./manage migrate
