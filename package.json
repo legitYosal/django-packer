@@ -31,15 +31,13 @@
     "url": "https://github.com/usefss/django-webpack/issues"
   },
   "homepage": "https://github.com/usefss/django-webpack#readme",
-  "dependencies": {
-    "clean-webpack-plugin": "^3.0.0",
-    "html-webpack-plugin": "^4.3.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.11.0",
     "@babel/preset-env": "^7.11.0",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.1.0",
+    "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^4.2.0",
     "eslint": "^7.6.0",
     "eslint-loader": "^4.0.2",

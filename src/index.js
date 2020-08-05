@@ -1,3 +1,6 @@
+// production
+// import Vue from 'vue/dist/vue.min.js'
+// development
 import Vue from 'vue/dist/vue.js'
 
 import HelloWorld from './components/HelloWorld.vue'

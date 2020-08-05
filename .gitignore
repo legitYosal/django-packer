@@ -8,6 +8,7 @@ node_modules
 dist/build
 dist
 build
+webpack-status.json
 
 ### editor
 
@@ -28,6 +29,8 @@ db.*
 *.pot
 *.pyc
 local_settings.py
+static
+./static
 
 ### Python ###
 pycache/

@@ -1,7 +1,6 @@
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
 const BundleTracker = require('webpack-bundle-tracker')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
 const path = require('path')
 
 module.exports = {
@@ -12,11 +11,9 @@ module.exports = {
         // print: './src/print.js',
     },
     output: {
-        // filename: '[name].[contenthash].js',
-        // chunkFilename: '[name].[contenthash].js',
-        filename: '[name].bundle.js',
-        chunkFilename: '[name].bundle.js',
         path: path.resolve(__dirname, 'dist', 'build'),
+        filename: '[name].[contenthash].js',
+        chunkFilename: '[name].[chunkhash].js',
     },
     module: {
         rules: [
@@ -63,13 +60,29 @@ module.exports = {
             path: __dirname,
             filename: './webpack-status.json'
         }),
-        new HtmlWebpackPlugin({template: './dist/test.html'})
     ],
     optimization: {
-        // runtimeChunk: 'single',
+        runtimeChunk: "single",
         moduleIds: 'hashed',
         splitChunks: {
-            chunks: 'all',
-        },
+            chunks: "all",
+            maxInitialRequests: Infinity,
+            minSize: 0,
+            cacheGroups: {
+                vendor: {
+                    test: /[\\/]node_modules[\\/]/,
+                    name(module) {
+                        // get the name. E.g. node_modules/packageName/not/this/part.js
+                        // or node_modules/packageName
+                        const packageName = module.context.match(
+                          /[\\/]node_modules[\\/](.*?)([\\/]|$)/
+                        )[1];
+
+                        // npm package names are URL-safe, but some servers don't like @ symbols
+                        return `npm.${packageName.replace("@", "")}`;
+                    }
+                }
+            }
+        }
     },
 }
