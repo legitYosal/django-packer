@@ -7,7 +7,6 @@
 <script>
 export default {
     delimiters: ['[[', ']]'],
-    awefawf: 'afewaf',
     data() {
         return {
             message: 'This is rendered from test',
@@ -28,7 +27,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 $test: #eee;
 #hello-world-container   {
   font-size: 18px;
