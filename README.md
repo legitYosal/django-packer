@@ -40,6 +40,6 @@ Structure project in a charming shape.
 [django + webpack](https://www.valentinog.com/blog/webpack-django/), explains about splitChunks and the options for stacking javascript with django.  
 [django + webpack](https://pascalw.me/blog/2020/04/19/webpack-django.html), very simple approach.  
 [working example repo](https://github.com/pascalw/django-webpack-boilerplate), showing the last working state, why I am doing this? :/  
-[configure vue.js with webpack](https://medium.com/js-dojo/how-to-configure-webpack-4-with-vuejs-a-complete-guide-209e943c4772).
-[django webpack loader](https://github.com/owais/django-webpack-loader), finall working example of webpack with django, although not providing components structure and need some times to configure it.
-[webpack bunle tracker](https://github.com/owais/webpack-bundle-tracker) plugin, solution from django-webpack-loader to track all hashed build files of webpack with django.
+[configure vue.js with webpack](https://medium.com/js-dojo/how-to-configure-webpack-4-with-vuejs-a-complete-guide-209e943c4772).  
+[django webpack loader](https://github.com/owais/django-webpack-loader), finall working example of webpack with django, although not providing components structure and need some times to configure it.  
+[webpack bunle tracker](https://github.com/owais/webpack-bundle-tracker) plugin, solution from django-webpack-loader to track all hashed build files of webpack with django.  
