@@ -30,6 +30,7 @@ Any change that makes this better is welcomed.
 
 ## What will happen?
 How to use webpack caching and hash file names with django seperated templates?  
+What is the correct order to include statics in html?
 Changing webpack to compile all files in src folder to seperate .js for sake of code spliting optimization.  
 Add something to django watcher to auto load compiled .js files to template base and reload browser.  
 Structure project in a charming shape.  
@@ -40,3 +41,5 @@ Structure project in a charming shape.
 [django + webpack](https://pascalw.me/blog/2020/04/19/webpack-django.html), very simple approach.  
 [working example repo](https://github.com/pascalw/django-webpack-boilerplate), showing the last working state, why I am doing this? :/  
 [configure vue.js with webpack](https://medium.com/js-dojo/how-to-configure-webpack-4-with-vuejs-a-complete-guide-209e943c4772).
+[django webpack loader](https://github.com/owais/django-webpack-loader), finall working example of webpack with django, although not providing components structure and need some times to configure it.
+[webpack bunle tracker](https://github.com/owais/webpack-bundle-tracker) plugin, solution from django-webpack-loader to track all hashed build files of webpack with django.

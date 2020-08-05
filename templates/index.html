@@ -1,10 +1,9 @@
 {% load static %}
+{% load inject_bundle from simple_loader %}
 <!DOCTYPE html>
 <html>
 <head>
     <title>test</title>
-    <script src="{% static 'build/vendors~app.bundle.js' %}"></script>
-    <script src="{% static 'build/app.bundle.js' %}"></script>
 </head>
 <body>
     <div id="app">
@@ -12,5 +11,6 @@
         <p>[[ message ]]</p>
         <just-a-test></just-a-test>
     </div>
+    {% inject_bundle %}
 </body>
 </html>

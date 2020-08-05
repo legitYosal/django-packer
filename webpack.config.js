@@ -1,5 +1,7 @@
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
+const BundleTracker = require('webpack-bundle-tracker')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 const path = require('path')
 
 module.exports = {
@@ -57,6 +59,11 @@ module.exports = {
     plugins: [
         new CleanWebpackPlugin(),
         new VueLoaderPlugin(),
+        new BundleTracker({
+            path: __dirname,
+            filename: './webpack-status.json'
+        }),
+        new HtmlWebpackPlugin({template: './dist/test.html'})
     ],
     optimization: {
         // runtimeChunk: 'single',
