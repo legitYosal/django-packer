@@ -6,7 +6,6 @@
 
 <script>
 export default {
-    delimiters: ['[[', ']]'],
     data() {
         return {
             message: 'This is rendered from test',
